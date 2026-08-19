@@ -30,9 +30,16 @@
     "test:core": "pnpm --filter @remake/core test",
     "test:data": "pnpm --filter @remake/data test",
     "test:condition": "pnpm --filter @remake/condition test",
-    "test:hooks": "pnpm --filter @remake/hooks test"
+    "test:hooks": "pnpm --filter @remake/hooks test",
+    "android:sync": "npx cap sync android",
+    "android:build": "pnpm build:data && pnpm build:web && npx cap sync android",
+    "android:open": "npx cap open android",
+    "android:run": "npx cap run android"
   },
   "devDependencies": {
+    "@capacitor/android": "^8.5.0",
+    "@capacitor/cli": "^8.5.0",
+    "@capacitor/core": "^8.5.0",
     "@types/bun": "1.3.14",
     "@typescript-eslint/eslint-plugin": "^8.67.0",
     "@typescript-eslint/parser": "^8.67.0",

@@ -111,3 +111,8 @@ __localStorage.json
 
 template/public
 public/data
+# Capacitor Android
+android/app/build/
+android/build/
+android/capacitor-*/
+android/.gradle/
